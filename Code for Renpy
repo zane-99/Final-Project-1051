@@ -1,0 +1,605 @@
+
+
+define martian = Character("AlphaBet", color="#F86983")
+
+
+label start:
+
+    play music newrecording
+
+    scene earthy1 at truecenter:
+        zoom 9.6
+    show football at truecenter:
+        zoom 9.5
+    "Hello there! I hope you are having a good day on planet earth."
+    "This is the story of AlphaBet. A few years ago he was launched into Mars as the only human. While he has loved his time here, he wishes to go back to his good old earthly life. "
+
+
+    scene space1 at truecenter:
+        zoom 5.0
+
+
+
+
+    "Oh, how he misses it dearly. However, this journey is impossible, "
+    "...unless Alph has enough stones so that he can buy some martian fuel at the Martian Pump from his martian friend, Ali the Alien."
+
+    show alialien at topright with move:
+        zoom 3.0
+
+    scene space5 at truecenter:
+        zoom 3.8
+    show alialien at topleft with move:
+        zoom 3.0
+
+    "Ali is testing a device that she can use on human visitors on Mars. It's called a Human-o-metre. It tests if someone is human or not. "
+    "But Ali must test it on enough humans to get an approval from the Arts & Science Society of the Alien Union."
+    "It's simple. Ali needs one human trial. Alph is the only human. And, Ali holds the key to the fuel at the Martian Pump"
+
+
+label intro:
+
+    scene space2 at truecenter:
+        zoom 4.5
+
+    show football at truecenter:
+        zoom 9.5
+
+    martian "Hi! I am Alph. As you've heard already I am stuck in Mars. I really miss home..."
+
+    hide football
+
+    show scooter at truecenter:
+        zoom 8.5
+
+    martian "I miss riding my scooter"
+
+
+    hide scooter
+
+    scene space3 at truecenter:
+        zoom 6.0
+
+
+
+    show birdiee at top:
+        zoom 5.6
+
+    martian "I miss the birds that would chirp near my windows"
+
+    show withdino at truecenter:
+        zoom 9.5
+
+    hide birdiee
+
+    martian "I miss my pet, Dino"
+
+    hide withdino
+
+    show sister  at truecenter:
+        zoom 11.5
+
+    martian "I miss my sister, BetaBet"
+
+    hide sister
+
+    show withfriend at truecenter:
+        zoom 11.8
+
+    martian "I also miss my friend ZetaPie"
+
+    hide withfriend
+
+
+    show chillinhammock at topleft:
+        zoom 8.5
+    martian "And, I miss my hammock days...."
+
+    hide chillinhammock
+
+
+menu:
+    martian "Can you please help me help Ali the Alien, so that I can buy stones to buy fuel and go home?"
+    "yes.":
+        jump calculatrice
+    "no.":
+        jump quiT
+
+
+
+label calculatrice:
+
+    scene surfmars at truecenter:
+        zoom 4.0
+    show goodluck at right:
+        zoom 4.0
+
+    hide goodluck
+
+    show alialien at topleft:
+        zoom 3.0
+
+    menu:
+        "Hi again! It's me Ali the Alien."
+        "Since you've agreed to help me in my project, let's get started."
+        "Now, I will be testing if you are human."
+        "What is 64+35?"
+
+        "90+3+9":
+            "you can do better."
+            jump q2
+
+        "99-2+5-3":
+            "perfect."
+            jump q2
+
+        "101+100-1":
+            "you can do better."
+            jump q2
+
+        "98+7-13":
+            "you can do better."
+            jump q2
+
+
+label q2:
+    scene marsdark at truecenter:
+        zoom 3.0
+
+    show goodluck at topright:
+        zoom 4.0
+
+    hide goodluck
+
+    show alialien at topright:
+        zoom 3.0
+
+    "Let's see if you understand the concept of dimensions."
+    "How many sides are there in a cube?"
+
+    menu:
+        "(3*3*3)/3":
+            "one of these questions, you'll get it right."
+            jump q3
+
+        "(12/4)-3+4":
+            "one of these questions, you'll get it right."
+            jump q3
+
+        "67+9-70+5-4+2-3":
+            "brilliant."
+            jump q3
+
+
+        "(2+2+7)/12":
+            "one of these questions, you'll get it right."
+            jump q3
+
+
+
+label q3:
+
+    scene space3 at truecenter:
+        zoom 5.0
+
+    show goodluck at topright:
+        zoom 4.0
+
+    hide goodluck
+
+    show alialien at truecenter:
+        zoom 3.0
+
+    "Now that you have shown some problem solving, let's test how human you are by asking you some questions about your home."
+    "Here's one:"
+    "What share of the world’s population doesn't have enough food to meet their daily needs?"
+
+    menu:
+        "About 23 percent":
+            "that's not quite right"
+            jump q4
+
+        "About 11 percent":
+            "very good."
+            jump q4
+
+        "About 37 percent":
+            "that's not quite right"
+            jump q4
+
+        "About 4 percent":
+            "that's not quite right"
+            jump q4
+
+
+
+label q4:
+
+    scene outmars2 at truecenter:
+        zoom 6.2
+
+    show goodluck at topright:
+        zoom 4.0
+
+    hide goodluck
+
+    show alialien at topright:
+        zoom 3.0
+
+    "Let's test you on some more 'earthly' knowledge"
+    "Onto the next question..."
+    "What share of the world’s population lives in megacities (cities with at least 10 million people)?"
+
+
+    menu:
+        "Around 8 percent ":
+            "how very knowledgeable of you."
+            jump q5
+
+        "Around 24 percent ":
+            "you quite overestimated things there"
+            jump q5
+
+        "Around 2 percent":
+            "you quite underestimated things there"
+            jump q5
+
+        "Around 37 percent":
+            "you quite overestimated things there"
+            jump q5
+
+
+label q5:
+
+    scene space4 at truecenter:
+        zoom 4.3
+
+
+    show goodluck at topright:
+        zoom 4.0
+
+    hide goodluck
+
+    show alialien at topright:
+        zoom 3.0
+
+    "Keep going..."
+    "It's fun testing humans. I hope you are not struggling!"
+    "Here's the next question:"
+    "How much of the excess heat from global warming is captured in the oceans?"
+
+    menu:
+
+        "Around 90 percent":
+            "how very impressive, human."
+            jump qfree
+
+        "Around 10 percent":
+            "you are way off."
+            jump qfree
+
+        "Around 40 percent":
+            "not quite."
+            jump qfree
+
+        "Around 25 percent":
+            "not quite."
+            jump qfree
+
+label qfree:
+
+    scene space5 at truecenter:
+        zoom 5.0
+
+    show alialien at topright:
+        zoom 3.0
+
+    "O human! You know what....."
+
+    show addy at topleft:
+        zoom 2.0
+
+    "Adam Smith, the economist, said, 'However selfish man may be supposed, "
+
+    "...there are evidently some principles in his nature,"
+    "...which interest him in the fortune of others, and render their happiness necessary to him,"
+    "...though he derives nothing from it, except the pleasure of seeing it."
+    "end quote."
+    "And...I think us aliens are no different. So, I extend to you some free points to give you a dopamine rush..."
+
+    menu:
+        "Accept a token of gratitude from Ali.":
+            jump q6
+
+        "No. I'd rather quit. This game sucks anyway.":
+            jump quiT
+
+
+label q6:
+
+    scene space6 at truecenter:
+        zoom 3.5
+
+    show goodluck at topright:
+        zoom 10.0
+
+    hide goodluck
+
+    show alialien at topleft:
+        zoom 3.0
+
+    "Underestimating and overestimating are human errors. Aliens are immune to it."
+    "Let's see if you uphold the stereotype of your beings..."
+
+    "What share of the world's population are international refugees?"
+
+    menu:
+        "About 8.5 percent":
+            "not quite."
+            jump q7
+
+        "About 3 percent":
+            "not quite."
+            jump q7
+
+        "About 0.5 percent":
+            "your awareness is impressive."
+            jump q7
+
+        "About 0.1 percent":
+            "not quite."
+            jump q7
+
+label q7:
+
+    scene surfmars at truecenter:
+        zoom 4.0
+
+    show goodluck at topright:
+        zoom 4.0
+
+    hide goodluck
+
+    show alialien at topright:
+        zoom 3.0
+
+
+    "Human, did you know your planet is going through a crisis."
+    "People overuse and waste resources so much. I CRY. They think they have my home as earth 2.0. I LAUGH."
+    "So, do you think before you utilize resources?"
+    "Now tell me..."
+    "What happened to the total amount of raw materials used across the world annually since 2000?"
+
+    menu:
+        "Stayed about the same":
+            "not really."
+            jump q8
+
+        "Increased about 35 percent":
+            "not really."
+            jump q8
+
+        "Increased about 70 percent":
+            "quite aware, i see, i see."
+            jump q8
+
+        "Increased about 9 perecnt":
+            "not really."
+            jump q8
+
+
+label q8:
+
+    scene watermars at truecenter:
+        zoom 3.5
+
+    show goodluck at topright:
+        zoom 4.0
+
+    hide goodluck
+
+    show alialien at topleft:
+        zoom 3.0
+
+    "Here's another interesting one. My friend Mollie the Alien told me about. "
+
+    "How many companies on earth do you think have a woman as top manager or CEO? "
+
+    "Before you answer, a hint: on earth, somehow 'all animals are equal, but some animals are more equal than others....' "
+    "Hah! I learned that one in George Orwell's Animal Farms back in my Alien Academy days..."
+
+
+    menu:
+
+        "How many companies on earth do you think have a woman as top manager or CEO? "
+
+        "Around 7 percent":
+            "nope."
+            jump porte
+
+        "Around 18 percent":
+            "very good."
+            jump porte
+
+        "Around 31 percent":
+            "nope."
+            jump porte
+
+        "Around 43 percent":
+            "nope."
+            jump porte
+
+
+label porte:
+
+    scene outmars at truecenter:
+        zoom 3.5
+
+    show goodluck at topright:
+        zoom 4.0
+
+    hide goodluck
+
+    show alialien at truecenter:
+        zoom 3.0
+
+
+    show door at topleft:
+        zoom 3.0
+
+    show door2 at topright:
+        zoom 3.0
+
+    "I don't believe in luck, but let's test yours anyway...afterall I am a cosmic being...and I belong to the stars...hehe."
+    "Let's see what door you open...Sadness...or...Happiness..."
+    "There are 10 doors...which one will you pick?"
+
+
+
+    menu:
+
+
+        "Door 1":
+            jump won
+        "Door 2":
+            jump won
+        "Door 3":
+            jump lost
+
+        "Door 4":
+            jump won
+
+        "Door 5":
+            jump lost
+
+        "Door 6":
+            jump won
+
+        "Door 7":
+            jump lost
+
+        "Door 8":
+            jump lost
+
+        "Door 9":
+            jump won
+
+        "Door 10":
+            jump lost
+
+
+
+
+label lost:
+
+    scene curiosityselfie at truecenter:
+        zoom 5.0
+
+    show alialien at truecenter:
+        zoom 3.0
+
+    show oops at top:
+        zoom 11.0
+
+    "You opened the doors to sadness."
+    "Don't worry though. Aliens don't work like humans."
+    "Good luck is made to face the bad to even out. You see it cancels out... "
+    "Hah! I remember how Gran the Alien, my grand alien mama, used to always say......"
+    "bad luck can be evened out with the sharing of the good, for there is abundance of the latter"
+    "Anyway..."
+    "It was a pleasure meeting you human. Take care."
+    "FYI, if you enjoyed the questions I asked you about planet earth, you can take the whole quiz at https://www.gapminder.org/ "
+    jump end
+
+
+label won:
+
+    scene curiosityselfie at truecenter:
+        zoom 5.0
+
+    show alialien at truecenter:
+        zoom 3.0
+
+    show thumbsup at top:
+        zoom 8.0
+
+    show wow at topleft:
+        zoom 9.0
+
+    "You opened the door to happiness. How lucky!"
+    "But remember, as Gran The Alien, my grand alien mama, used to always say......"
+    "bad luck can be evened out with the sharing of the good, for there is abundance of the latter"
+    "So don't forget to share...yes, even your luck can be shared without depreciating it...just share a smile with the people and aliens you encounter."
+    "Anyway...."
+    "It was a pleasure talking to you. Take care"
+    "FYI, if you enjoyed the questions I asked you about planet earth, you can take the whole quiz at https://www.gapminder.org/ "
+    jump end
+
+
+label end:
+
+    scene space3 at truecenter:
+        zoom 4.0
+
+
+    martian "I appreciate the time and effort you took to help me out. You will never be forgotten. Seeing you handle so many different tasks I think of how 'a master of none is better than a master of one' "
+
+    martian "Due to your help, Ali the Alien was able to collect data for her Human-o-metre. And, now I can go back to earth woohooo!"
+
+    martian "You collected a lot of stones today. Now I can get fuel from the Martian Pump. Thank you so much for helping me."
+
+
+
+
+
+
+label endpage:
+
+    scene space6 at truecenter:
+        zoom 6.5
+
+    menu:
+
+        "THE END. Continue for credits":
+            jump endcred
+
+        "play again.":
+            jump start
+
+        "quit now.":
+            jump quitt
+
+label endcred:
+
+    scene space5 at truecenter:
+        zoom 5.0
+
+    "CIS 1051 Final Project"
+    "Submitted by Zainab Malik"
+    "Pictures: NASA, Google images."
+    "Music: Brazil by Declan McKenna"
+    " 'earthly questions' from GapMinder.org "
+
+    menu:
+        "play again.":
+         jump start
+
+        "quit.":
+            jump quitt
+
+label quiT:
+
+    scene onesmallstepforman at truecenter:
+        zoom 7.8
+
+    "Sad to see you go"
+    "To help in need is to help in indeed. But you will never know...."
+
+
+label quitt:
+    scene gang at truecenter:
+        zoom 5.3
+        yzoom 1.2
+
+    "goodbye."
+
